@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "EE+pCU9/V1U7mAGCiWgR7MfPpAZxBbxqU8FpL/GI4x6LNodoo98g/D9LVMgEKZ3wq5/f1xSsGRudZZo/kSfPSA==",
+  "success": true,
+  "projectFilePath": "C:\\DDD\\PU\\2-2-TallerDeLenguaje2\\TPTL2\\TPN2\\tl2-tp2-2022-gudiino\\LogTest\\LogTest.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\USUARIO\\.nuget\\packages\\nlog\\5.0.4\\nlog.5.0.4.nupkg.sha512"
+  ],
+  "logs": []
+}

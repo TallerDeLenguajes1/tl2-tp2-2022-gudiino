@@ -1,0 +1,21 @@
+﻿using System;
+using NLog;
+public static class Program
+{
+    private static readonly NLog.Logger Logger = NLog.LogManager.GetCurrentClassLogger();
+
+    public static void Main()
+    {
+        try
+        {
+           Logger.Info("Hello world");
+           Logger.Info("Goodbye cruel world");
+           Logger.Debug("Goodbye cruel world");
+           System.Console.ReadKey();
+        }
+        catch (Exception ex)
+        {
+           Logger.Error(ex, "Goodbye cruel world");
+        }
+    }
+} 
