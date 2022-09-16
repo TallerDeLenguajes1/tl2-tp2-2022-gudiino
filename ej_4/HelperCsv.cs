@@ -18,11 +18,15 @@ namespace Cursos
 
             string? Linea = "";
             List<string[]> LecturaDelArchivo = new List<string[]>();
-
+            int cont=0;
             while ((Linea = StrReader.ReadLine()) != null)
             {
-                string[] Fila = Linea.Split(caracter);
-                LecturaDelArchivo.Add(Fila);
+                if(cont!=0){
+                    string[] Fila = Linea.Split(caracter);
+                    LecturaDelArchivo.Add(Fila);
+                }else{
+                    cont=1;
+                }
             }
             MiArchivo.Close();
             return LecturaDelArchivo;

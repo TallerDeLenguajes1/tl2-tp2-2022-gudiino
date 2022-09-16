@@ -24,21 +24,33 @@ namespace Cursos
             GuardarAlumno(alumno1);
             GuardarAlumno(alumno2);
             GuardarAlumno(alumno3);
+            BorrarAlumnos(2);
             Console.WriteLine("\nFIN PROGRAMA.");
         }
         private static Alumno cargar_datos(){
             Console.WriteLine("Ingrese los datos del alumno");
-            Console.Write("ID: ");
-            string? dato_id=Console.ReadLine();
-            int id=Convert.ToInt32(dato_id);
+            Random numRan= new Random();
+            Console.Write("ID inscripcion: ");
+            //string? dato_id=Console.ReadLine();
+            //int id=Convert.ToInt32(dato_id);
+            int id;//provisorio
+            id=numRan.Next(int.MaxValue);
+            Console.Write(id);
+            Console.WriteLine();
             Console.Write("Apellido: ");
             String? ape=Console.ReadLine();
             Console.Write("Nombre: ");
             String? nom=Console.ReadLine();
             Console.Write("DNI: ");
-            string? dato_dni=Console.ReadLine();
-            int dni=Convert.ToInt32(dato_dni);
-            Console.Write("Curso: ");
+            //string? dato_dni=Console.ReadLine();
+            //int dni=Convert.ToInt32(dato_dni);
+            int dni=1234578;
+            Console.WriteLine();
+            Console.WriteLine("Curso: ");
+            Console.WriteLine("0 -> Atletismo");
+            Console.WriteLine("1 -> Voley");
+            Console.WriteLine("2 -> Futbol");
+            Console.Write("Seleccion: ");
             string? dato_curso=Console.ReadLine();
             int curso=Convert.ToInt32(dato_curso);
             Alumno alumno0= new Alumno(id,nom,ape,dni,curso);
@@ -52,6 +64,15 @@ namespace Cursos
             lista_alumno.Add(linea);
             HelperCSV.GuardarCSV(archivo,lista_alumno);
         }
+        private static void BorrarAlumnos(int curso)
+        {//******************* guardar dato en csv
+            string archivo = $"{Enum.GetName(typeof(Alumno.CursosInst), curso)}.csv";
+            File.Delete(archivo);
+            List<string[]> lista_alumno=new List<string[]>();
+            HelperCSV.GuardarCSV(archivo,lista_alumno);
+            Console.WriteLine($"Lista de Alumnos del curso {Enum.GetName(typeof(Alumno.CursosInst), curso)} borrados.");
+        }
+    
     }
 }
     
