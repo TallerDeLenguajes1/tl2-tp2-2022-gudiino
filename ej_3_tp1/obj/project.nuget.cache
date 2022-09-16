@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "jJQ0tRiiz8nymbWHdLaMasSDMVXh8RBxg8q3sMPmKsJHbQ8mwEWtDLfACgYr5SiFqruZQUCfM+4PnteZy7m19w==",
+  "success": true,
+  "projectFilePath": "C:\\DDD\\PU\\2-2-TallerDeLenguaje2\\TPTL2\\TPN1\\tp1-2022-gudiino\\ej_3\\ej_3.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\USUARIO\\.nuget\\packages\\nlog\\5.0.4\\nlog.5.0.4.nupkg.sha512"
+  ],
+  "logs": []
+}
