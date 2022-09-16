@@ -1,0 +1,12 @@
+2022-09-09 19:20:43.2093|DEBUG|Ejercicio3.Program|System.OverflowException: Value was either too large or too small for an Int32.
+   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+   at System.Convert.ToInt32(String value)
+   at Ejercicio3.Program.CargarEmpleados() in C:\DDD\PU\2-2-TallerDeLenguaje2\TPTL2\TPN1\tp1-2022-gudiino\ej_3\Program.cs:line 33
+2022-09-09 19:22:33.2243|INFO|Ejercicio3.Program|formato ingresado invalido, no es numero|System.FormatException: Input string was not in a correct format.
+   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+   at System.Convert.ToInt32(String value)
+   at Ejercicio3.Program.CargarEmpleados() in C:\DDD\PU\2-2-TallerDeLenguaje2\TPTL2\TPN1\tp1-2022-gudiino\ej_3\Program.cs:line 33
+2022-09-09 19:23:49.1757|DEBUG|Ejercicio3.Program|valor ingresado esta fuera de rango|System.OverflowException: Value was either too large or too small for an Int32.
+   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+   at System.Convert.ToInt32(String value)
+   at Ejercicio3.Program.CargarEmpleados() in C:\DDD\PU\2-2-TallerDeLenguaje2\TPTL2\TPN1\tp1-2022-gudiino\ej_3\Program.cs:line 33
