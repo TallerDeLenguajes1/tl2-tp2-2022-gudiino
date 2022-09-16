@@ -1,5 +1,0 @@
-2022-09-09 18:40:06.1125|INFO|Program|Hello world
-2022-09-09 18:45:41.7204|INFO|Program|Hello world
-2022-09-09 18:46:47.3939|INFO|Program|Hello world
-2022-09-09 18:46:47.5437|INFO|Program|Goodbye cruel world
-2022-09-09 18:46:47.5733|DEBUG|Program|Goodbye cruel world
