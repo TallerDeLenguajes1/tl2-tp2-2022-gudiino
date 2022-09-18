@@ -1,0 +1,8 @@
+2022-09-18 10:07:43.1802|ERROR|Program|Ejemplo de mensaje de error|System.DivideByZeroException: Attempted to divide by zero.
+   at Program.Main() in C:\DDD\PU\2-2-TallerDeLenguaje2\TPTL2\TPN2\tl2-tp2-2022-gudiino\LogTest\Program.cs:line 15
+2022-09-18 11:37:41.4055|ERROR|Program|Ejemplo de mensaje de error|System.DivideByZeroException: Attempted to divide by zero.
+   at Program.Main() in C:\DDD\PU\2-2-TallerDeLenguaje2\TPTL2\TPN2\tl2-tp2-2022-gudiino\LogTest\Program.cs:line 15
+2022-09-18 11:41:39.2593|ERROR|Program|Ejemplo de mensaje de error|System.DivideByZeroException: Attempted to divide by zero.
+   at Program.Main() in C:\DDD\PU\2-2-TallerDeLenguaje2\TPTL2\TPN2\tl2-tp2-2022-gudiino\LogTest\Program.cs:line 15
+2022-09-18 11:42:24.2466|ERROR|Program|Ejemplo de mensaje de error|System.DivideByZeroException: Attempted to divide by zero.
+   at Program.Main() in C:\DDD\PU\2-2-TallerDeLenguaje2\TPTL2\TPN2\tl2-tp2-2022-gudiino\LogTest\Program.cs:line 15

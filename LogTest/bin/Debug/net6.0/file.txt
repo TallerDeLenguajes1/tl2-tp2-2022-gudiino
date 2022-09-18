@@ -3,3 +3,21 @@
 2022-09-09 18:46:47.3939|INFO|Program|Hello world
 2022-09-09 18:46:47.5437|INFO|Program|Goodbye cruel world
 2022-09-09 18:46:47.5733|DEBUG|Program|Goodbye cruel world
+2022-09-18 09:40:33.1876|INFO|Program|Hello world
+2022-09-18 10:03:02.4864|INFO|Program|Hello world
+2022-09-18 10:03:02.6162|DEBUG|Program|Ejemplo de mensaje debug 
+2022-09-18 10:03:02.6162|INFO|Program|Ejemplo de mensaje de información
+2022-09-18 10:03:02.6162|WARN|Program|Ejemplo de mensaje de Warm
+2022-09-18 10:03:02.6191|ERROR|Program|Ejemplo de mensaje de error|System.DivideByZeroException: Attempted to divide by zero.
+   at Program.Main() in C:\DDD\PU\2-2-TallerDeLenguaje2\TPTL2\TPN2\tl2-tp2-2022-gudiino\LogTest\Program.cs:line 15
+2022-09-18 10:03:03.0343|FATAL|Program|Ejemplo de mensaje de error Fatal
+2022-09-18 10:07:43.1036|INFO|Program|Hello world
+2022-09-18 10:07:43.1774|DEBUG|Program|Ejemplo de mensaje debug 
+2022-09-18 10:07:43.1774|INFO|Program|Ejemplo de mensaje de información
+2022-09-18 10:07:43.1774|WARN|Program|Ejemplo de mensaje de Warm
+2022-09-18 10:07:43.1802|ERROR|Program|Ejemplo de mensaje de error|System.DivideByZeroException: Attempted to divide by zero.
+   at Program.Main() in C:\DDD\PU\2-2-TallerDeLenguaje2\TPTL2\TPN2\tl2-tp2-2022-gudiino\LogTest\Program.cs:line 15
+2022-09-18 10:07:43.2056|FATAL|Program|Ejemplo de mensaje de error Fatal
+2022-09-18 11:37:41.3580|DEBUG|Program|Ejemplo de mensaje debug 
+2022-09-18 11:41:39.2105|DEBUG|Program|Ejemplo de mensaje debug 
+2022-09-18 11:42:24.1776|DEBUG|Program|Ejemplo de mensaje debug 

@@ -25,7 +25,7 @@ namespace Cursos
             Console.WriteLine($"Apellido: {Apellido}");
             Console.WriteLine($"Nombre: {Nombre}");
             Console.WriteLine($"DNI: {DNI}");
-            Console.WriteLine($"Curso: {Curso}");
+            Console.WriteLine($"Curso: {Enum.GetName(typeof(Alumno.CursosInst), Curso)}");
             Console.WriteLine();
         }
         

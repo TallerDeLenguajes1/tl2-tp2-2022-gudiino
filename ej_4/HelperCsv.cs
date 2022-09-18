@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Cursos
 {
-    public static class HelperCSV
+    public static class HelperDeArchivos
     {
         public static List<string[]> LeerCsv(string ruta, char caracter)
         {
@@ -43,6 +43,16 @@ namespace Cursos
                     StreamW.WriteLine(linea[0]+','+linea[1]+','+linea[2]+','+linea[3]);
                 }
             }//using libera los recursos 
+            Fstream.Close();
+        }
+        public static void LimpiarCSV(string ruta)
+        {
+            File.Delete(ruta);
+            FileStream Fstream = new FileStream(ruta, FileMode.OpenOrCreate);
+            using (StreamWriter StreamW = new StreamWriter(Fstream))
+            {
+                StreamW.WriteLine("ID,Apellido,Nombre,DNI");
+            }
             Fstream.Close();
         }
     }

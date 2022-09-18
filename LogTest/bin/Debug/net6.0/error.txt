@@ -1,0 +1,6 @@
+2022-09-18 11:58:36.4418|INFO|Program|Hello world
+2022-09-18 11:58:41.9102|INFO|Program|Ejemplo de mensaje de información
+2022-09-18 11:58:41.9102|WARN|Program|Ejemplo de mensaje de Warm
+2022-09-18 11:58:41.9102|ERROR|Program|Ejemplo de mensaje de error|System.DivideByZeroException: Attempted to divide by zero.
+   at Program.Main() in C:\DDD\PU\2-2-TallerDeLenguaje2\TPTL2\TPN2\tl2-tp2-2022-gudiino\LogTest\Program.cs:line 15
+2022-09-18 11:58:41.9935|FATAL|Program|Ejemplo de mensaje de error Fatal
