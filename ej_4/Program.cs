@@ -6,10 +6,12 @@ using System.IO;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.Net;
+using NLog;
 namespace Cursos
 {
     class Program
     {
+         private static readonly NLog.Logger Logger = NLog.LogManager.GetCurrentClassLogger();
         static void Main(string[] args)
         {//Alumno(int id, string nom, string ape, int dni, int curs)
             Random numRan= new Random();
@@ -18,6 +20,8 @@ namespace Cursos
             Alumno alumno2= new Alumno(numRan.Next(1000000),"Jose","Alvarez",12345678,2);
             Alumno alumno3=cargar_datos();
             Console.WriteLine();
+            Console.WriteLine("LISTA DE ALGUNOS ALUMOS CARGADOS");
+            Console.WriteLine("................................");
             alumno0.mostrar_info();
             alumno1.mostrar_info();
             alumno2.mostrar_info();
@@ -27,6 +31,9 @@ namespace Cursos
             GuardarAlumno(alumno1);
             GuardarAlumno(alumno2);
             GuardarAlumno(alumno3);
+            Console.WriteLine("\n");
+            Console.WriteLine("BORRANDO LISTA DE ALUMOS");
+            Console.WriteLine("........................");
             BorrarAlumnos(1);
             Console.WriteLine("\nFIN PROGRAMA.");
         }
@@ -45,32 +52,7 @@ namespace Cursos
             String? ape=Console.ReadLine();
             Console.Write("Nombre: ");
             String? nom=Console.ReadLine();
-            //int cont=0;
             int dni=carga_entero("DNI");
-            // while(cont<=2){
-            //     try
-            //     {
-            //         Console.Write("DNI: ");
-            //         dni=conversion_a_entero();
-            //         cont=3;
-            //     }
-            //     catch(Exception)
-            //     {
-            //         cont++;
-            //         if (cont==3)
-            //         {
-            //             Console.WriteLine("\n-------------ALERTA-----------------");
-            //             Console.WriteLine("Fallo en la carga de los datos, reingrese de nuevo");
-            //             Console.WriteLine("+++ FALLA: ");
-            //             throw;
-            //         }
-            //         Console.WriteLine("Reintento: {0}/2",cont);
-            //     }
-            // }
-            //Console.Write("DNI: ");
-            //string? dato_dni=Console.ReadLine();
-            //int dni=Convert.ToInt32(dato_dni);
-            //int dni=conversion_a_entero();
             Console.WriteLine("Cursos: ");
             Console.WriteLine("0 -> Atletismo");
             Console.WriteLine("1 -> Voley");
@@ -128,7 +110,7 @@ namespace Cursos
                     dni=conversion_a_entero();
                     cont=3;
                 }
-                catch(Exception)
+                catch(Exception ex)
                 {
                     cont++;
                     if (cont==3)
@@ -136,6 +118,8 @@ namespace Cursos
                         Console.WriteLine("\n-------------ALERTA-----------------");
                         Console.WriteLine("Fallo en la carga de los datos, reingrese de nuevo");
                         Console.WriteLine("+++ FALLA: ");
+                        Logger.Info(ex.Message);
+                        Logger.Debug(ex.Message);
                         throw;
                     }
                     Console.WriteLine("Reintento: {0}/2",cont);
@@ -166,9 +150,11 @@ namespace Cursos
                 Console.WriteLine("OPERACION no valida");
                 Console.WriteLine("+++ MENSAJE EXCEPCION:");
                 Console.WriteLine(ex.Message);
+                Logger.Warn(ex);
+                Logger.Error(ex);
+                Logger.Fatal(ex);
                 throw;
             }
         }
     }
 }
-    

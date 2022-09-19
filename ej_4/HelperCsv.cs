@@ -9,10 +9,6 @@ namespace Cursos
     {
         public static List<string[]> LeerCsv(string ruta, char caracter)
         {
-            // if (!File.Exists(ruta))//validacion de su existencia
-            // {
-            //     File.Create(ruta);
-            // }
             FileStream MiArchivo = new FileStream(ruta, FileMode.OpenOrCreate);
             StreamReader StrReader = new StreamReader(MiArchivo);
 
